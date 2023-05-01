@@ -1,9 +1,0 @@
-{
-    "conventionalCommits.scopes": [
-        "root",
-        "settings",
-        "angular",
-        "src",
-        "html"
-    ]
-}
