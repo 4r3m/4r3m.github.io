@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
+  fontAwesome = 'fas fa-download'
+  buttonText = 'Download CV'
+
   downloadMyFile() {
     // Create a link element
     const link = document.createElement('a');
