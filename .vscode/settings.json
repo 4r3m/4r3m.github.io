@@ -6,6 +6,7 @@
         "src",
         "html",
         "app",
-        "all"
+        "all",
+        "component"
     ]
 }
