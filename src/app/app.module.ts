@@ -14,7 +14,7 @@ import { RedundantButtonComponent } from './utilities/redundant-button/redundant
     AboutComponent,
     PortfolioComponent,
     ContactComponent,
-    RedundantButtonComponent
+    RedundantButtonComponent,
   ],
   imports: [
     BrowserModule,
