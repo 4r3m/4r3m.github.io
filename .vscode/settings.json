@@ -8,6 +8,7 @@
         "app",
         "all",
         "component",
-        "docs"
+        "docs",
+        "services"
     ]
 }
