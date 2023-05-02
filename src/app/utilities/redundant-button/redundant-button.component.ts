@@ -11,12 +11,6 @@ export class RedundantButtonComponent {
   @Input() fontAwesome = '';
 
   whatFunction() {
-    switch (this.buttonText) {
-      case 'Send':
-        console.log('This is an apple');
-        break;
-      case 'Download CV':
-        console.log('This is a banana');
         // Create a link element
         const link = document.createElement('a');
         // Set the target attribute to '_blank' to open the file in a new tab
@@ -33,7 +27,7 @@ export class RedundantButtonComponent {
         link.remove();
         // Log a message to the console to indicate that the download has started
         console.log('Download started');
-        break;
+
     }
   }
-}
+
