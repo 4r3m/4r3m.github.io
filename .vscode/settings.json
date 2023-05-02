@@ -5,6 +5,7 @@
         "angular",
         "src",
         "html",
-        "app"
+        "app",
+        "all"
     ]
 }
