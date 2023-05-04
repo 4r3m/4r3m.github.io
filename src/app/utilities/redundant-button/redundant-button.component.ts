@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-redundant-button',
@@ -10,16 +11,16 @@ export class RedundantButtonComponent {
   @Input() function: Function | undefined;
   @Input() fontAwesome = '';
 
+
+  assetsDir = environment.assetsDir;
+
   whatFunction() {
     // Create a link element
     const link = document.createElement('a');
     // Set the target attribute to '_blank' to open the file in a new tab
     link.setAttribute('target', '_blank');
     // Set the href attribute to the URL of the file you want to download
-    link.setAttribute(
-      'href',
-      'https://drive.google.com/file/d/1totVw8BfLm3RyI5nT7Tf8IISbmDo-4dG/view?usp=share_link'
-    );
+    link.setAttribute('href', this.assetsDir +'/assets/files/RaymartSalvador.pdf');
     // Set the download attribute to the desired filename for the downloaded file
     link.setAttribute('download', 'RaymartSalvador.pdf');
     // Append the link element to the body of the page
