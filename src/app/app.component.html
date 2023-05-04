@@ -3,13 +3,14 @@
     <div class="left-header">
       <div class="h-shape"></div>
       <div class="image">
-        <img src="https://github.com/4r3m/4r3m.github.io/blob/master/docs/assets/images/joker.jpg" alt="">
+        <img [src]="assetsDir + '/assets/images/joker.jpg'" alt="">
       </div>
     </div>
     <div class="right-header">
       <h1 class="name">
         Hi, I'm <span>Raymart Salvador</span>
         A Web Developer.
+        <p>{{assetsDir}}</p>
       </h1>
       <p>
         A person that can work hard and smart at the same time.
