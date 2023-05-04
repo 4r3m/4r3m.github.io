@@ -303,11 +303,13 @@
   .main-title {
     h2 {
       font-size: 2rem;
+      padding-top: 4rem;
       span {
         font-size: 2.3rem;
       }
       .bg-text {
         font-size: 2.3rem;
+
       }
     }
   }
@@ -357,4 +359,8 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+}
+
+.button {
+  padding-top: 3rem;
 }
