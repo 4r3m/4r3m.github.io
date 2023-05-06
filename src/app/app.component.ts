@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
   function:Function = this.downloadMyFile;
   buttonText = 'Downlod CV'
   fontAwesome = 'fas fa-download'
+  
   assetsDir = environment.assetsDir;
 
   constructor() {}
