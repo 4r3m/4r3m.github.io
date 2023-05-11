@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-about',
@@ -8,6 +9,7 @@ import { Component } from '@angular/core';
 export class AboutComponent {
   fontAwesome = 'fas fa-download'
   buttonText = 'Download CV'
+  _ASSETS = environment._ASSETS
 
   downloadMyFile() {
     // Create a link element

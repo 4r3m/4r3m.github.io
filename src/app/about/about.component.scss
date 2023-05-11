@@ -70,10 +70,19 @@
 .about-stats .progress-bars .progress-bar {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  border: solid 1px var(--color-grey-5);
+  border-radius: 10px;
+  .fa{
+    font-size: 3rem;
+    color: var(--color-secondary);
+  }
 }
 .about-stats .progress-bars .progress-bar .prog-title {
   text-transform: uppercase;
   font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 .about-stats .progress-bars .progress-bar .progress-con {
   display: flex;
@@ -97,30 +106,6 @@
   background-color: var(--color-secondary);
   transition: all 0.4s ease-in-out;
   width: 60%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 80%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 78%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 60%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .react {
-  width: 50%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .node {
-  width: 40%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .python {
-  width: 70%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .xml {
-  width: 80%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .java {
-  width: 75%;
 }
 
 .stat-title {
