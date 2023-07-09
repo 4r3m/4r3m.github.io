@@ -10,7 +10,6 @@
         "component",
         "docs",
         "services",
-        "environment",
-        "image"
+        "environment"
     ]
 }
