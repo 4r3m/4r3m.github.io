@@ -12,7 +12,7 @@ export class RedundantButtonComponent {
   @Input() fontAwesome = '';
 
 
-  assetsDir = environment.assetsDir;
+  _ASSETS = environment._ASSETS;
 
   whatFunction() {
     // Create a link element
@@ -20,7 +20,7 @@ export class RedundantButtonComponent {
     // Set the target attribute to '_blank' to open the file in a new tab
     link.setAttribute('target', '_blank');
     // Set the href attribute to the URL of the file you want to download
-    link.setAttribute('href', this.assetsDir +'/assets/files/RaymartSalvador.pdf');
+    link.setAttribute('href', this._ASSETS +'/assets/files/RaymartSalvador.pdf');
     // Set the download attribute to the desired filename for the downloaded file
     link.setAttribute('download', 'RaymartSalvador.pdf');
     // Append the link element to the body of the page

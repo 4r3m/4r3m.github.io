@@ -9,6 +9,6 @@ import { environment } from 'src/environments/environment';
 export class PortfolioComponent {
 
 
-  assetsDir = environment.assetsDir;
+  _ASSETS = environment._ASSETS;
 
 }
