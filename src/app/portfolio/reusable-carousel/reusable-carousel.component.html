@@ -1,0 +1,40 @@
+<div class="carousel">
+  <div class="slideshow-container">
+    <div *ngFor="let slide of slides; let i = index" class="mySlides fade">
+      <div class="text">{{ slide.caption }}</div>
+      <div class="numbertext">{{ i + 1 }} / {{ slides.length }}</div>
+      <img [src]="slide.url" style="width: 100%" alt="" />
+    </div>
+
+    <a class="prev" (click)="plusSlides(-1)">❮</a>
+    <a class="next" (click)="plusSlides(1)">❯</a>
+  </div>
+  <br />
+  <div style="text-align: center">
+    <span
+      *ngFor="let slide of slides; let i = index"
+      class="dot"
+      (click)="currentSlide(i + 1)"
+    ></span>
+  </div>
+</div>
+<div class="carousel">
+  <div class="slideshow-container">
+    <div *ngFor="let slide of slides; let i = index" class="mySlides fade">
+      <div class="text">{{ slide.caption }}</div>
+      <div class="numbertext">{{ i + 1 }} / {{ slides.length }}</div>
+      <img [src]="slide.url" style="width: 100%" alt="" />
+    </div>
+
+    <a class="prev" (click)="plusSlides(-1)">❮</a>
+    <a class="next" (click)="plusSlides(1)">❯</a>
+  </div>
+  <br />
+  <div style="text-align: center">
+    <span
+      *ngFor="let slide of slides; let i = index"
+      class="dot"
+      (click)="currentSlide(i + 1)"
+    ></span>
+  </div>
+</div>

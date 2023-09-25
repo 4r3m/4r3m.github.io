@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { RedundantButtonComponent } from './utilities/redundant-button/redundant-button.component';
+import { ReusableCarouselComponent } from './portfolio/reusable-carousel/reusable-carousel.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { RedundantButtonComponent } from './utilities/redundant-button/redundant
     PortfolioComponent,
     ContactComponent,
     RedundantButtonComponent,
+    ReusableCarouselComponent,
   ],
   imports: [
     BrowserModule,

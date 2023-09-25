@@ -10,6 +10,8 @@
         "component",
         "docs",
         "services",
-        "environment"
+        "environment",
+        "root",
+        "main"
     ]
 }
