@@ -1,6 +1,6 @@
 import { environment } from '../environments/environment';
 import { Component, OnInit } from '@angular/core';
-
+import { FULL_NAME, SELF_DESCRIPTION, SPECIALIZATION } from './utilities/const/main';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,6 +10,9 @@ export class AppComponent implements OnInit {
   title(title: any) {
     throw new Error('Method not implemented.');
   }
+  specialization = SPECIALIZATION;
+  fullName = FULL_NAME;
+  selfDescription = SELF_DESCRIPTION;
 
   function:Function = this.downloadMyFile;
   buttonText = 'Downlod CV'
