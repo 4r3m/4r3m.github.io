@@ -15,12 +15,11 @@ export class AppComponent implements OnInit {
   selfDescription = SELF_DESCRIPTION;
 
   function:Function = this.downloadMyFile;
-  buttonText = 'Downlod CV'
+  buttonText = 'Download CV'
   fontAwesome = 'fas fa-download'
 
   _ASSETS = environment._ASSETS;
 
-  constructor() {}
 
   ngOnInit(): void {
     this.setButtonListeners();
