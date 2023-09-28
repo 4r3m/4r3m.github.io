@@ -12,6 +12,7 @@
         "services",
         "environment",
         "root",
-        "main"
+        "main",
+        "docs-ghpages"
     ]
 }

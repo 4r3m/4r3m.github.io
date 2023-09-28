@@ -1,11 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
-  selector: 'app-reusable-carousel',
-  templateUrl: './reusable-carousel.component.html',
-  styleUrls: ['./reusable-carousel.component.scss'],
+  selector: 'app-reusable-carousel1',
+  templateUrl: './reusable-carousel1.component.html',
+  styleUrls: ['./reusable-carousel1.component.scss'],
 })
-export class ReusableCarouselComponent {
+export class ReusableCarousel1Component {
   @Input() slides: any[] = [];
   slideIndex = 1;
 

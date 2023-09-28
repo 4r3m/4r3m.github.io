@@ -8,6 +8,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { RedundantButtonComponent } from './utilities/redundant-button/redundant-button.component';
 import { ReusableCarouselComponent } from './portfolio/reusable-carousel/reusable-carousel.component';
+import { ReusableCarousel1Component } from './portfolio/reusable-carousel1/reusable-carousel1.component';
+import { ReusableCarousel3Component } from './portfolio/reusable-carousel3/reusable-carousel3.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { ReusableCarouselComponent } from './portfolio/reusable-carousel/reusabl
     ContactComponent,
     RedundantButtonComponent,
     ReusableCarouselComponent,
+    ReusableCarousel1Component,
+    ReusableCarousel3Component,
   ],
   imports: [
     BrowserModule,
