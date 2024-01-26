@@ -2,10 +2,15 @@
   box-sizing: border-box
 }
 
+img{
+  height: 800px;
+  width: 500px;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: auto;
-  width: 60%;
+  width: fit-content;
   height: auto;
   position: relative;
   margin: auto;
@@ -14,7 +19,7 @@
 }
 
 /* Hide the images by default */
-.mySlides {
+.mySlides5 {
   display: none;
 }
 
@@ -47,6 +52,7 @@
   border-radius: 0 10px 10px 0;
   color: var(--color-secondary);
 }
+
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
@@ -84,7 +90,7 @@
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot5 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -96,7 +102,7 @@
 }
 
 .active,
-.dot:hover {
+.dot5:hover {
   background-color: #717171;
 }
 

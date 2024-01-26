@@ -1,6 +1,10 @@
 <div class="carousel">
   <div class="slideshow-container">
-    <div *ngFor="let slide of slides; let i = index" class="mySlides2 fade" [style.display]="(slideIndex - 1) === i ? 'block' : 'none'">
+    <div
+      *ngFor="let slide of slides; let i = index"
+      class="mySlides2 fade"
+      [style.display]="slideIndex - 1 === i ? 'block' : 'none'"
+    >
       <div class="numbertext">{{ i + 1 }} / {{ slides.length }}</div>
       <img [src]="slide.url" style="width: 100%" alt="" />
     </div>
@@ -9,11 +13,5 @@
     <a class="next" (click)="plusSlides(1)">❯</a>
   </div>
   <br />
-  <div style="text-align: center">
-    <span
-      *ngFor="let slide of slides; let i = index"
-      class="dot2"
-      (click)="currentSlide(i + 1)"
-    ></span>
-  </div>
+  
 </div>

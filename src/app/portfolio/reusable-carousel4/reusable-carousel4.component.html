@@ -1,8 +1,13 @@
 <div class="carousel">
+  <p class="project-description">
+    This interface is displayed on a big screen for clients to view their queue.
+    It is equipped with Text-to-Speech feature to announce the queue number and
+    counter number.
+  </p>
   <div class="slideshow-container">
     <div
       *ngFor="let slide of slides; let i = index"
-      class="mySlides1 fade"
+      class="mySlides3 fade"
       [style.display]="slideIndex - 1 === i ? 'block' : 'none'"
     >
       <div class="numbertext">{{ i + 1 }} / {{ slides.length }}</div>

@@ -74,4 +74,58 @@ export class PortfolioComponent {
       url: this._ASSETS + '/assets/images/dental-clinic/7.png',
     },
   ];
+  slides3 = [
+    {
+      url: this._ASSETS + '/assets/images/queuewise/public/1.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/public/2.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/public/3.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/public/4.png',
+    },
+  ];
+  slides4 = [
+    {
+      url: this._ASSETS + '/assets/images/queuewise/teller/1.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/teller/2.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/teller/3.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/teller/4.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/teller/5.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/teller/6.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/teller/7.png',
+    },
+  ];
+  slides5 = [
+    {
+      url: this._ASSETS + '/assets/images/queuewise/kiosk/1.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/kiosk/2.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/kiosk/3.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/kiosk/4.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/kiosk/5.png',
+    },
+  ];
 }

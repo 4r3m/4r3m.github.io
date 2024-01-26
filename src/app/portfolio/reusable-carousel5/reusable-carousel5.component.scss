@@ -5,7 +5,7 @@
 /* Slideshow container */
 .slideshow-container {
   max-width: auto;
-  width: 60%;
+  width: 90%;
   height: auto;
   position: relative;
   margin: auto;
@@ -14,7 +14,7 @@
 }
 
 /* Hide the images by default */
-.mySlides {
+.mySlides4 {
   display: none;
 }
 
@@ -84,7 +84,7 @@
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot4 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -96,8 +96,8 @@
 }
 
 .active,
-.dot:hover {
-  background-color: #717171;
+.dot4:hover {
+  background-color: var(--color-secondary);
 }
 
 /* Fading animation */
