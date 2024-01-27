@@ -1,17 +1,55 @@
 .about-container .left-about p {
   padding-left: 0;
 }
-.content{
+
+.contact-icon {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.contact-icon a {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  background-color: var(--color-grey-5);
+  cursor: pointer;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.contact-icon a:hover {
+  background-color: var(--color-secondary);
+}
+
+.contact-icon a:hover i {
+  color: var(--color-primary);
+}
+
+.content {
   padding-top: 50px;
 }
+
+.contact-icon a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
 @media screen and (max-width: 600px) {
   header {
     padding: 0 !important;
   }
+
   .theme-btn {
     width: 50px;
     height: 50px;
   }
+
   .header-content {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
@@ -22,17 +60,20 @@
       display: none;
     }
   }
+
   .right-header {
     grid-row: 1;
     padding-right: 0rem !important;
     width: 90%;
     margin: 0 auto;
+
     .name {
       font-size: 2.5rem !important;
       text-align: center;
       padding-top: 3rem;
     }
   }
+
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
@@ -47,6 +88,7 @@
     transform: translateX(-50%);
     width: 100%;
     background-color: var(--color-grey-5);
+
     .control {
       margin: 1rem 0.3rem;
     }
@@ -54,12 +96,15 @@
 
   .about-container {
     grid-template-columns: repeat(1, 1fr);
+
     .right-about {
       grid-template-columns: repeat(1, 1fr);
       padding-top: 2.5rem;
     }
+
     .left-about {
       padding-right: 0;
+
       p {
         padding-left: 0;
       }
@@ -89,14 +134,17 @@
 
   .contact-content-con {
     flex-direction: column;
+
     .right-contact {
       margin-left: 0;
       margin-top: 2.5rem;
     }
   }
+
   .contact-content-con .right-contact .i-c-2 {
     flex-direction: column;
   }
+
   .contact-content-con .right-contact .i-c-2 :last-child {
     margin-left: 0;
     margin-top: 1.5rem;
@@ -105,13 +153,16 @@
   .contact-item {
     flex-direction: column;
     margin: 1rem 0;
+
     p {
       font-size: 15px;
       color: var(--color-grey-2);
     }
+
     span {
       font-size: 15px;
     }
+
     .icon {
       grid-template-columns: 25px 1fr;
     }
@@ -120,9 +171,11 @@
   .main-title {
     h2 {
       font-size: 2rem;
+
       span {
         font-size: 2.3rem;
       }
+
       .bg-text {
         font-size: 2.3rem;
       }
@@ -137,14 +190,17 @@
 
   .contact-content-con {
     flex-direction: column;
+
     .right-contact {
       margin-left: 0;
       margin-top: 2.5rem;
     }
   }
+
   .contact-content-con .right-contact .i-c-2 {
     flex-direction: column;
   }
+
   .contact-content-con .right-contact .i-c-2 :last-child {
     margin-left: 0;
     margin-top: 1.5rem;
@@ -163,6 +219,7 @@
   .portfolios {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .header-content .right-header {
     padding-right: 9rem;
   }
@@ -229,11 +286,13 @@ section {
   animation: fadeDown 0.5s ease-in-out;
   transform: translateY(0) scaleY(1);
 }
+
 @keyframes fadeDown {
   0% {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -251,6 +310,7 @@ section {
   justify-content: center;
   transform: translateY(-50%);
 }
+
 .controls .control {
   padding: 1rem;
   cursor: pointer;
@@ -264,15 +324,18 @@ section {
   margin: 0.7rem 0;
   box-shadow: var(--box-shadow-1);
 }
+
 .controls .control i {
   font-size: 1.2rem;
   color: var(--color-grey-2);
   pointer-events: none;
 }
+
 .controls .active-btn {
   background-color: var(--color-secondary);
   transition: all 0.4s ease-in-out;
 }
+
 .controls .active-btn i {
   color: var(--color-white);
 }
@@ -292,9 +355,11 @@ section {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.1s ease-in-out;
 }
+
 .theme-btn:active {
   transform: translateY(-3px);
 }
+
 .theme-btn i {
   font-size: 1.4rem;
   color: var(--color-grey-2);
@@ -307,11 +372,13 @@ section {
   grid-template-columns: repeat(2, 1fr);
   min-height: 100vh;
 }
+
 .header-content .left-header {
   display: flex;
   align-items: center;
   position: relative;
 }
+
 .header-content .left-header .h-shape {
   transition: all 0.4s ease-in-out;
   width: 65%;
@@ -323,6 +390,7 @@ section {
   z-index: -1;
   clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
 }
+
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
   height: 90%;
@@ -331,24 +399,29 @@ section {
   background-color: var(--color-black);
   transition: all 0.4s ease-in-out;
 }
+
 .header-content .left-header .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all 0.4s ease-in-out;
 }
+
 .header-content .right-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 18rem;
 }
+
 .header-content .right-header .name {
   font-size: 3rem;
 }
+
 .header-content .right-header .name span {
   color: var(--color-secondary);
 }
+
 .header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
@@ -364,15 +437,18 @@ section {
 .main-title {
   text-align: center;
 }
+
 .main-title h2 {
   position: relative;
   text-transform: uppercase;
   font-size: 4rem;
   font-weight: 700;
 }
+
 .main-title h2 span {
   color: var(--color-secondary);
 }
+
 .main-title h2 .bg-text {
   position: absolute;
   top: 50%;
@@ -410,6 +486,7 @@ section {
     width: 90%;
     margin: 0 auto;
   }
+
   .right-header .name {
     font-size: 2.5rem !important;
     text-align: center;
@@ -431,6 +508,7 @@ section {
     width: 100%;
     background-color: var(--color-grey-5);
   }
+
   .controls .control {
     margin: 1rem 0.3rem;
   }
@@ -445,6 +523,7 @@ section {
   .contact-content-con {
     flex-direction: column;
   }
+
   .contact-content-con .right-contact {
     margin-left: 0;
     margin-top: 2.5rem;
@@ -463,13 +542,16 @@ section {
     flex-direction: column;
     margin: 1rem 0;
   }
+
   .contact-item p {
     font-size: 15px;
     color: var(--color-grey-2);
   }
+
   .contact-item span {
     font-size: 15px;
   }
+
   .contact-item .icon {
     grid-template-columns: 25px 1fr;
   }
@@ -477,13 +559,16 @@ section {
   .main-title h2 {
     font-size: 2rem;
   }
+
   .main-title h2 span {
     font-size: 2.3rem;
   }
+
   .main-title h2 .bg-text {
     font-size: 2.3rem;
   }
 }
+
 @media screen and (max-width: 1432px) {
   .container {
     padding: 7rem 11rem;
@@ -492,6 +577,7 @@ section {
   .contact-content-con {
     flex-direction: column;
   }
+
   .contact-content-con .right-contact {
     margin-left: 0;
     margin-top: 2.5rem;
@@ -510,6 +596,7 @@ section {
     font-size: 5.5rem;
   }
 }
+
 @media screen and (max-width: 1250px) {
   .portfolios {
     grid-template-columns: repeat(2, 1fr);
@@ -519,15 +606,18 @@ section {
     padding-right: 9rem;
   }
 }
+
 @media screen and (max-width: 660px) {
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
 @media screen and (max-width: 1070px) {
   .about-container {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .about-container .right-about {
     padding-top: 2.5rem;
   }
@@ -535,13 +625,16 @@ section {
   .main-title h2 {
     font-size: 4rem;
   }
+
   .main-title h2 span {
     font-size: 4rem;
   }
+
   .main-title h2 .bg-text {
     font-size: 4.5rem;
   }
 }
+
 @media screen and (max-width: 970px) {
   .container {
     padding: 7rem 6rem;
@@ -559,6 +652,7 @@ section {
   .left-header .h-shape {
     display: none;
   }
+
   .left-header .image {
     width: 90% !important;
     margin: 0 auto !important;
@@ -570,12 +664,14 @@ section {
     width: 90%;
     margin: 0 auto;
   }
+
   .right-header .name {
     font-size: 2.5rem !important;
     text-align: center;
     padding-top: 3rem;
   }
 }
+
 @media screen and (max-width: 700px) {
   .container {
     padding: 7rem 3rem;
@@ -596,9 +692,11 @@ section {
   .main-title h2 {
     font-size: 3rem;
   }
+
   .main-title h2 span {
     font-size: 3rem;
   }
+
   .main-title h2 .bg-text {
     font-size: 4rem;
   }
@@ -622,10 +720,12 @@ section {
   header {
     padding: 0 !important;
   }
+
   .theme-btn {
     width: 50px;
     height: 50px;
   }
+
   .header-content {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
@@ -636,17 +736,20 @@ section {
       display: none;
     }
   }
+
   .right-header {
     grid-row: 1;
     padding-right: 0rem !important;
     width: 90%;
     margin: 0 auto;
+
     .name {
       font-size: 2.5rem !important;
       text-align: center;
       padding-top: 3rem;
     }
   }
+
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
@@ -661,6 +764,7 @@ section {
     transform: translateX(-50%);
     width: 100%;
     background-color: var(--color-grey-5);
+
     .control {
       margin: 1rem 0.3rem;
     }
@@ -668,12 +772,15 @@ section {
 
   .about-container {
     grid-template-columns: repeat(1, 1fr);
+
     .right-about {
       grid-template-columns: repeat(1, 1fr);
       padding-top: 2.5rem;
     }
+
     .left-about {
       padding-right: 0;
+
       p {
         padding-left: 0;
       }
@@ -703,14 +810,17 @@ section {
 
   .contact-content-con {
     flex-direction: column;
+
     .right-contact {
       margin-left: 0;
       margin-top: 2.5rem;
     }
   }
+
   .contact-content-con .right-contact .i-c-2 {
     flex-direction: column;
   }
+
   .contact-content-con .right-contact .i-c-2 :last-child {
     margin-left: 0;
     margin-top: 1.5rem;
@@ -719,13 +829,16 @@ section {
   .contact-item {
     flex-direction: column;
     margin: 1rem 0;
+
     p {
       font-size: 15px;
       color: var(--color-grey-2);
     }
+
     span {
       font-size: 15px;
     }
+
     .icon {
       grid-template-columns: 25px 1fr;
     }
@@ -734,6 +847,7 @@ section {
   .main-title {
     h2 {
       font-size: 2rem;
+
       span {
         font-size: 2.3rem;
       }
@@ -748,14 +862,17 @@ section {
 
   .contact-content-con {
     flex-direction: column;
+
     .right-contact {
       margin-left: 0;
       margin-top: 2.5rem;
     }
   }
+
   .contact-content-con .right-contact .i-c-2 {
     flex-direction: column;
   }
+
   .contact-content-con .right-contact .i-c-2 :last-child {
     margin-left: 0;
     margin-top: 1.5rem;
@@ -774,10 +891,12 @@ section {
   .portfolios {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .header-content .right-header {
     padding-right: 9rem;
   }
 }
+
 @media screen and (max-width: 660px) {
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
@@ -787,16 +906,20 @@ section {
 @media screen and (max-width: 1070px) {
   .about-container {
     grid-template-columns: repeat(1, 1fr);
+
     .right-about {
       padding-top: 2.5rem;
     }
   }
+
   .main-title {
     h2 {
       font-size: 4rem;
+
       span {
         font-size: 4rem;
       }
+
       .bg-text {
         font-size: 4.5rem;
       }
@@ -808,9 +931,11 @@ section {
   .container {
     padding: 7rem 6rem;
   }
+
   .about-container .left-about {
     padding-right: 0rem;
   }
+
   .header-content {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
@@ -820,16 +945,19 @@ section {
     .h-shape {
       display: none;
     }
+
     .image {
       width: 90% !important;
       margin: 0 auto !important;
     }
   }
+
   .right-header {
     grid-row: 1;
     padding-right: 0rem !important;
     width: 90%;
     margin: 0 auto;
+
     .name {
       font-size: 2.5rem !important;
       text-align: center;
@@ -837,13 +965,16 @@ section {
     }
   }
 }
+
 @media screen and (max-width: 700px) {
   .container {
     padding: 7rem 3rem;
   }
+
   .about-stats .progress-bars {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .about-container .right-about {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -851,12 +982,15 @@ section {
   .timeline {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .main-title {
     h2 {
       font-size: 3rem;
+
       span {
         font-size: 3rem;
       }
+
       .bg-text {
         font-size: 4rem;
       }
