@@ -1,0 +1,28 @@
+<div class="carousel">
+  <p style="padding: 30px 0; text-align: center">
+    A <b> portfolio template </b> project of ground-gurus that accommodates
+    MSMEs and individuals that wants to showcase their products and services. It
+    is made by one of the team in ground-gurus that I also belong. Link:
+    <a
+      style="background-color: var(--color-white); color: var(--color-grey-4)"
+      href="https://peygappportfolio-cb690e220f65.herokuapp.com/portfolio/658bd40a89c5a"
+      target="_blank"
+      >
+      Click to see the live demo
+    </a>
+  </p>
+  <div class="slideshow-container">
+    <div
+      *ngFor="let slide of slides; let i = index"
+      class="mySlides5 fade"
+      [style.display]="slideIndex - 1 === i ? 'block' : 'none'"
+    >
+      <div class="numbertext">{{ i + 1 }} / {{ slides.length }}</div>
+      <img [src]="slide.url" style="width: 100%" alt="" />
+    </div>
+
+    <a class="prev" (click)="plusSlides(-1)">❮</a>
+    <a class="next" (click)="plusSlides(1)">❯</a>
+  </div>
+  <br />
+</div>

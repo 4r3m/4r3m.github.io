@@ -136,4 +136,21 @@ export class PortfolioComponent {
       url: this._ASSETS + '/assets/images/queuewise/live/2.png',
     },
   ];
+  slides7 = [
+    {
+      url: this._ASSETS + '/assets/images/ground-gurus/portfolio/1.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/ground-gurus/portfolio/2.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/ground-gurus/portfolio/3.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/ground-gurus/portfolio/4.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/ground-gurus/portfolio/5.png',
+    },
+  ];
 }

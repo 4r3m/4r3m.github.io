@@ -26,14 +26,40 @@
 }
 
 .all {
+  margin-bottom: 100px;
+
   .title {
     margin: 1rem;
     font-size: 35px;
     font-weight: bold;
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+
+
 
   }
 }
 
 .color-secondary {
   color: var(--color-secondary);
+}
+
+.tech-contain {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  margin-left: 40px;
+  flex-wrap: wrap;
+
+  .tech {
+    background-color: var(--color-grey-4);
+    font-weight: normal;
+    padding: 2px 7px;
+    font-size: 15px;
+    columns: var(--color-white);
+    height: max-content;
+    border-radius: 40px;
+  }
 }
