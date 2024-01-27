@@ -2,21 +2,10 @@
   box-sizing: border-box
 }
 
-.project-description {
-  margin: 1vw 5vw;
-  text-align: center;
-  font-style: italic;
-}
-
-img {
-  height: 800px;
-  width: 500px;
-}
-
 /* Slideshow container */
 .slideshow-container {
   max-width: auto;
-  width: fit-content;
+  width: 90%;
   height: auto;
   position: relative;
   margin: auto;
@@ -25,7 +14,7 @@ img {
 }
 
 /* Hide the images by default */
-.mySlides1 {
+.mySlides6 {
   display: none;
 }
 
@@ -59,6 +48,11 @@ img {
   color: var(--color-secondary);
 }
 
+.project-description {
+  margin: 1vw 5vw;
+  text-align: center;
+  font-style: italic;
+}
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
@@ -96,6 +90,7 @@ img {
 }
 
 
+
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -111,4 +106,3 @@ img {
     opacity: 1
   }
 }
-

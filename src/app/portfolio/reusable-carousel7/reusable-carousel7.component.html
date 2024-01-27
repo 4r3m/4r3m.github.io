@@ -1,14 +1,11 @@
 <div class="carousel">
   <p class="project-description">
-    This part of the system is used by the client to generate a ticket. It is
-    equipped with Text-to-Speech feature to instruct the client. The kiosk is
-    capable of printing ticket with unique QR code for user to scan and view
-    their queue status.
+    This part of the system is a live viewing of the queue status. It is where scanning of the QR code is redirected.
   </p>
   <div class="slideshow-container">
     <div
       *ngFor="let slide of slides; let i = index"
-      class="mySlides5 fade"
+      class="mySlides6 fade"
       [style.display]="slideIndex - 1 === i ? 'block' : 'none'"
     >
       <div class="numbertext">{{ i + 1 }} / {{ slides.length }}</div>

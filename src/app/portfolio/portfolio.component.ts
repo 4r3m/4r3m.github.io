@@ -128,4 +128,21 @@ export class PortfolioComponent {
       url: this._ASSETS + '/assets/images/queuewise/kiosk/5.png',
     },
   ];
+  slides6 = [
+    {
+      url: this._ASSETS + '/assets/images/queuewise/live/1.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/live/2.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/live/3.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/live/4.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/queuewise/live/5.png',
+    },
+  ];
 }

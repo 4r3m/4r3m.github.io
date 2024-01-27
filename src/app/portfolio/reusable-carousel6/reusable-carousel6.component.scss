@@ -2,7 +2,13 @@
   box-sizing: border-box
 }
 
-img{
+.project-description {
+  margin: 1vw 5vw;
+  text-align: center;
+  font-style: italic;
+}
+
+img {
   height: 800px;
   width: 500px;
 }
@@ -120,4 +126,13 @@ img{
   to {
     opacity: 1
   }
+}
+
+@media screen and (max-width: 768px) {
+
+  img {
+    height: auto;
+    width: 180px;
+  }
+
 }
