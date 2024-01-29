@@ -153,4 +153,21 @@ export class PortfolioComponent {
       url: this._ASSETS + '/assets/images/ground-gurus/portfolio/5.png',
     },
   ];
+  slides8 = [
+    {
+      url: this._ASSETS + '/assets/images/ground-gurus/go-endorse/1.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/ground-gurus/go-endorse/2.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/ground-gurus/go-endorse/3.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/ground-gurus/go-endorse/4.png',
+    },
+    {
+      url: this._ASSETS + '/assets/images/ground-gurus/go-endorse/5.png',
+    },
+  ];
 }

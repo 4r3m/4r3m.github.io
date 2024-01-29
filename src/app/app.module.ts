@@ -15,6 +15,7 @@ import { ReusableCarousel5Component } from './portfolio/reusable-carousel5/reusa
 import { ReusableCarousel6Component } from './portfolio/reusable-carousel6/reusable-carousel6.component';
 import { ReusableCarousel7Component } from './portfolio/reusable-carousel7/reusable-carousel7.component';
 import { ReusableCarousel8Component } from './portfolio/reusable-carousel8/reusable-carousel8.component';
+import { ReusableCarousel9Component } from './portfolio/reusable-carousel9/reusable-carousel9.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ReusableCarousel8Component } from './portfolio/reusable-carousel8/reusa
     ReusableCarousel6Component,
     ReusableCarousel7Component,
     ReusableCarousel8Component,
+    ReusableCarousel9Component,
   ],
   imports: [
     BrowserModule,

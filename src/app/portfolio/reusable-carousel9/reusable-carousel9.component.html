@@ -1,0 +1,27 @@
+<div class="carousel">
+  <p style="padding: 30px 0; text-align: center">
+    Our GoEndorse is a platform on where we help our learners and other Job
+    seekers to be industry-connected Link:
+    <a
+      style="background-color: var(--color-white); color: var(--color-grey-4)"
+      href="https://go-endorse.vercel.app/"
+      target="_blank"
+    >
+      Click to see the live demo
+    </a>
+  </p>
+  <div class="slideshow-container">
+    <div
+      *ngFor="let slide of slides; let i = index"
+      class="mySlides8 fade"
+      [style.display]="slideIndex - 1 === i ? 'block' : 'none'"
+    >
+      <div class="numbertext">{{ i + 1 }} / {{ slides.length }}</div>
+      <img [src]="slide.url" style="width: 100%" alt="" />
+    </div>
+
+    <a class="prev" (click)="plusSlides(-1)">❮</a>
+    <a class="next" (click)="plusSlides(1)">❯</a>
+  </div>
+  <br />
+</div>
