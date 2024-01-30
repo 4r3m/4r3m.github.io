@@ -1,15 +1,19 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent {
-  fontAwesome = 'fas fa-download'
-  buttonText = 'Download CV'
-  _ASSETS = environment._ASSETS
+  constructor(private title: Title) {
+    title.setTitle('Raymart Salvador');
+  }
+  fontAwesome = 'fas fa-download';
+  buttonText = 'Download CV';
+  _ASSETS = environment._ASSETS;
 
   downloadMyFile() {
     // Create a link element

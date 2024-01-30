@@ -1,28 +1,35 @@
 import { environment } from '../environments/environment';
 import { Component, OnInit } from '@angular/core';
-import { FULL_NAME, SELF_DESCRIPTION, SPECIALIZATION } from './utilities/const/main';
+import * as AOS from 'aos';
+import {
+  FULL_NAME,
+  SELF_DESCRIPTION,
+  SPECIALIZATION,
+} from './utilities/const/main';
+import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss', ]
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title(title: any) {
-    throw new Error('Method not implemented.');
+  constructor(private title: Title) {
+    title.setTitle('Raymart Salvador');
   }
   specialization = SPECIALIZATION;
   fullName = FULL_NAME;
   selfDescription = SELF_DESCRIPTION;
 
-  function:Function = this.downloadMyFile;
-  buttonText = 'Download CV'
-  fontAwesome = 'fas fa-download'
+  function: Function = this.downloadMyFile;
+  buttonText = 'Download CV';
+  fontAwesome = 'fas fa-download';
 
   _ASSETS = environment._ASSETS;
 
-
   ngOnInit(): void {
     this.setButtonListeners();
+    AOS.init(); //AOS - 2
+    AOS.refresh(); //refresh method is called on window resize and so on, as it doesn't require to build new store with AOS elements and should be as light as possible.
   }
 
   downloadMyFile() {
@@ -44,20 +51,20 @@ export class AppComponent implements OnInit {
     console.log('Download started');
   }
   private setButtonListeners() {
-    document.querySelectorAll(".control").forEach((button: Element) => {
-      button.addEventListener("click", function(this: HTMLElement) {
-        const id = this.getAttribute("data-id");
+    document.querySelectorAll('.control').forEach((button: Element) => {
+      button.addEventListener('click', function (this: HTMLElement) {
+        const id = this.getAttribute('data-id');
         if (id) {
-          document.querySelector(".active-btn")!.classList.remove("active-btn");
-          this.classList.add("active-btn");
-          document.querySelector(".active")!.classList.remove("active");
-          document.getElementById(id)!.classList.add("active");
+          document.querySelector('.active-btn')!.classList.remove('active-btn');
+          this.classList.add('active-btn');
+          document.querySelector('.active')!.classList.remove('active');
+          document.getElementById(id)!.classList.add('active');
         }
       });
     });
 
-    document.querySelector(".theme-btn")!.addEventListener("click", () => {
-      document.body.classList.toggle("light-mode");
+    document.querySelector('.theme-btn')!.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
     });
   }
 }

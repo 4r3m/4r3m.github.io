@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -7,6 +8,7 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./portfolio.component.scss'],
 })
 export class PortfolioComponent {
+
   _ASSETS = environment._ASSETS;
 
   slides = [
