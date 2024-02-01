@@ -218,6 +218,8 @@
 
 
 @media screen and (max-width: 600px) {
+
+
   header {
     padding: 0 !important;
   }
@@ -386,6 +388,90 @@
       }
     }
   }
+}
+
+.cards {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+
+  h4 {
+    color: var(--color-secondary);
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
+    width: 400px;
+    border-radius: 10px;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 var(--color-secondary);
+    cursor: pointer;
+    transform: translate(0, -10px);
+  }
+
+  .container {
+    padding: 2px 16px;
+  }
+}
+
+
+
+.image-modal-container {
+  position: fixed;
+  left: 50%;
+  top: -20%;
+  width: 700px;
+  transform: translate(-50%, 0);
+  height: auto;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-modal {
+  max-width: 95%;
+  /* Adjust as needed */
+  z-index: 9999;
+  max-height: 95vh;
+  /* Adjust as needed */
+  width: auto;
+  height: auto;
+}
+
+/* Add styles to center the content within the modal */
+.image-modal .container {
+  text-align: center;
+  color: white;
+  /* Adjust text color as needed */
+}
+
+
+/* Add styles to center the content within the modal */
+.image-modal .container {
+  text-align: center;
+  color: white;
+  /* Adjust text color as needed */
+}
+
+@media screen and (max-width: 768px) {
+  .image-modal-container {
+    display: none;
+  }
+
+
 }
 
 @media screen and (max-width: 1250px) {
