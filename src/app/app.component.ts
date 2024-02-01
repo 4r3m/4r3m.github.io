@@ -1,6 +1,5 @@
 import { environment } from '../environments/environment';
 import { Component, OnInit } from '@angular/core';
-import * as AOS from 'aos';
 import {
   FULL_NAME,
   SELF_DESCRIPTION,
@@ -28,8 +27,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.setButtonListeners();
-    AOS.init(); //AOS - 2
-    AOS.refresh(); //refresh method is called on window resize and so on, as it doesn't require to build new store with AOS elements and should be as light as possible.
   }
 
   downloadMyFile() {

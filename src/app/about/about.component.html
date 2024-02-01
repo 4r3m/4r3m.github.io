@@ -118,11 +118,70 @@
     </div>
   </div>
 </div>
-
 <!-- <div class="about-stats">
   <h4 class="stat-title">Certificates</h4>
-
+  <div class="cards">
+    <div class="card" *ngFor="let certificate of certificates; let i = index">
+      <div class="modal-click" (click)="OnShowModal(i)">
+        <img
+          src="{{ certificate.url }}"
+          alt="certificate"
+          style="width: 100%"
+        />
+        <div class="container">
+          <h4>
+            <b>{{ certificate.title }}</b>
+          </h4>
+          <p>{{ certificate.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="image-modal-container" *ngIf="showModal == true">
+    <img src="{{ modalAsset }}" alt="" class="image-modal" />
+    <div class="modal-close" (click)="OnCloseModal()">
+      <i class="fas fa-times"></i>
+  </div>
 </div> -->
+<div class="about-stats">
+  <h4 class="stat-title">Certificates</h4>
+  <div class="cards">
+    <div class="card" *ngFor="let certificate of certificates; let i = index">
+      <!-- Add click event binding to the modal-click div -->
+      <!-- Add click event binding to the modal-click div -->
+      <div class="modal-click" (click)="enlargeImage(certificate.url)">
+        <img [src]="certificate.url" alt="certificate" style="width: 100%" />
+        <div class="container">
+          <h4>
+            <b>{{ certificate.title }}</b>
+          </h4>
+          <p>{{ certificate.description }}</p>
+        </div>
+      </div>
+
+      <!-- Add an Angular ngIf directive to conditionally render the modal -->
+      <div
+        class="image-modal-container"
+        *ngIf="showModal"
+        (mouseleave)="closeImageModal()"
+        (click)="closeImageModal()"
+      >
+        <div class="image-modal">
+          <img
+            [src]="modalAsset"
+            alt="enlarged-certificate"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h4><b>Certificate Title</b></h4>
+            <p>Certificate Description</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <h4 class="stat-title">My Timeline</h4>
 <div class="timeline">
   <div class="timeline-item">
